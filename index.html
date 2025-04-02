@@ -5,144 +5,147 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chatrbox | Smart Training for Happy Pets</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: Arial, sans-serif;
-      color: #333;
-      background-color: #fff;
+      padding: 0;
+    }
+    body {
+      font-family: sans-serif;
+      background: #fff;
+      color: #222;
       line-height: 1.6;
     }
-    header, section, footer {
-      padding: 2rem 1rem;
-      max-width: 900px;
+    header {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    header p {
+      font-size: 1.125rem;
+      margin: 1rem 0;
+    }
+    section {
+      padding: 2.5rem 1rem;
+      max-width: 800px;
       margin: auto;
     }
-    .hero {
-      background: url('hero-pet.jpg') no-repeat center center/cover;
-      color: white;
-      text-align: center;
-      padding: 5rem 1rem;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-    }
-    .hero .btn {
-      padding: 0.75rem 1.5rem;
-      background: #007bff;
-      color: white;
-      border: none;
-      border-radius: 0.5rem;
-      font-size: 1rem;
-      cursor: pointer;
-    }
     section h2 {
-      font-size: 1.75rem;
+      font-size: 1.5rem;
       margin-bottom: 1rem;
+      color: #333;
     }
     ul {
-      list-style: none;
-      padding-left: 0;
+      list-style-type: disc;
+      padding-left: 1.25rem;
     }
-    ul li::before {
-      content: "• ";
-      color: #007bff;
-    }
-    .features-grid {
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      grid-template-columns: 1fr;
       gap: 1rem;
-      text-align: center;
     }
-    .features-grid div {
-      background: #f5f5f5;
+    .grid-item {
+      background: #f0f0f0;
       padding: 1rem;
-      border-radius: 0.5rem;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: 600;
+    }
+    @media (min-width: 600px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 900px) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
     footer {
       text-align: center;
-      font-size: 0.9rem;
+      padding: 2rem 1rem;
+      background: #f1f1f1;
       color: #666;
-      padding-bottom: 3rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <header class="hero">
+  <header>
     <h1>Smart Training. Happy Pets.</h1>
-    <p>Chatrbox helps you set boundaries with kindness — using motion, sound, and your voice.</p>
-    <button class="btn">Buy on Amazon</button>
+    <p>Set boundaries with kindness using motion, sound, and your voice.</p>
   </header>
 
   <section>
-    <h2>What is Chatrbox and why do I need it?</h2>
+    <h2>What is Chatrbox?</h2>
     <ul>
-      <li>Prevents property damage, messes, and stress</li>
-      <li>Keeps pets safe without cages or fear</li>
-      <li>Protects pet-free zones like carpets, beds, counters</li>
-      <li>Helps pets feel secure with clear expectations</li>
+      <li>Protects your furniture, carpets, and personal spaces</li>
+      <li>Gives pets freedom — without cages or fences</li>
+      <li>Sets clear boundaries in a kind and consistent way</li>
+      <li>Improves safety and harmony in the home</li>
     </ul>
   </section>
 
   <section>
-    <h2>How does it work?</h2>
+    <h2>How It Works</h2>
     <ul>
-      <li>Motion detection senses your pet</li>
-      <li>Plays a custom tone or your voice</li>
-      <li>Optional escalation (lights, sound)</li>
-      <li>Adjustable focus shields for precise zones</li>
+      <li>Detects pet motion automatically</li>
+      <li>Plays a tone or your custom recorded voice</li>
+      <li>Optional escalation with lights and sounds</li>
+      <li>Adjustable shields focus the detection area</li>
     </ul>
   </section>
 
   <section>
-    <h2>Where does it work?</h2>
+    <h2>Where It Works</h2>
     <ul>
-      <li>At home or while away</li>
-      <li>Anywhere indoors</li>
-      <li>Rooms, counters, carpets, furniture, personal items</li>
-      <li>Adjust as needed, anytime</li>
+      <li>Use indoors, at home or while away</li>
+      <li>Protect doorways, counters, beds, or valuables</li>
+      <li>Move or adjust as your pet's habits change</li>
     </ul>
   </section>
 
   <section>
     <h2>Key Features</h2>
-    <div class="features-grid">
-      <div>Simple Controls</div>
-      <div>LED Lights</div>
-      <div>Volume Control</div>
-      <div>Pause/Resume</div>
-      <div>Portable</div>
-      <div>Custom Training (Voice/Tones/Lights)</div>
-      <div>Pre-training via Captive Portal</div>
+    <div class="grid">
+      <div class="grid-item">Simple Controls</div>
+      <div class="grid-item">LED Feedback</div>
+      <div class="grid-item">Volume Control</div>
+      <div class="grid-item">Pause / Resume</div>
+      <div class="grid-item">Portable Design</div>
+      <div class="grid-item">Custom Voice / Tones</div>
+      <div class="grid-item">Built-in Wi-Fi Setup</div>
     </div>
   </section>
 
   <section>
-    <h2>Better than the other solutions</h2>
+    <h2>Better Than the Rest</h2>
     <ul>
-      <li>No shock, no ultrasonic sounds</li>
-      <li>No messy sprays or sticky tape</li>
-      <li>No gates or crates — virtual boundaries only</li>
-      <li>Gentle, effective, and fear-free</li>
+      <li>No shock or ultrasonic deterrents</li>
+      <li>Clean — no sprays or sticky tape</li>
+      <li>Virtual boundaries — no gates or crates</li>
+      <li>Safe, effective, and fear-free</li>
     </ul>
   </section>
 
   <section>
     <h2>Benefits</h2>
     <ul>
-      <li>Near instant training results</li>
-      <li>No fear approach</li>
-      <li>Long-term learning with consistent exposure</li>
-      <li>Better harmony between pets and owners</li>
+      <li>Instant training feedback for pets</li>
+      <li>Positive reinforcement, not punishment</li>
+      <li>Consistent training improves long-term behavior</li>
+      <li>Happier homes for pets and people</li>
     </ul>
   </section>
 
   <footer>
-    <p>© 2025 Chatrbox. All rights reserved.</p>
+    <p>&copy; 2025 Chatrbox. All rights reserved.</p>
   </footer>
 </body>
 </html>
+
